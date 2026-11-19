@@ -12,4 +12,11 @@ public class Employee {
 	public void IncreaseSalary(double percentage) {
 		GrossSalary += GrossSalary * (percentage/100);
 	}
+	
+	public String toString() {
+		return name
+			+ ", "
+			+ "$ "
+			+ String.format("%.2f", netSalary());
+	}
 }
